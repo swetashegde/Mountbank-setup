@@ -1,0 +1,13 @@
+{
+  "imposters": [{
+    "port": 5555,
+    "protocol": "http",
+    "name": "origin",
+    "stubs": [
+      {
+        "predicates": [],
+        "responses": [{ "is": { "body": "Hey! I'm your stub server!" }}]
+      }
+    ]
+  }]
+}
