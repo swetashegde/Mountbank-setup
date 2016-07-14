@@ -5,6 +5,19 @@
     "name": "origin",
     "stubs": [
       {
+        "predicates": [{
+             "and": [
+               {
+                 "equals": {
+                   "method": "GET",
+                   "path": "/search"
+                 }
+               }
+             ]
+           }],
+        "responses": [{ "is": { "body": "Hey! I got your search request!" }}]
+      },
+      {
         "predicates": [],
         "responses": [{ "is": { "body": "Hey! I'm your stub server!" }}]
       }
